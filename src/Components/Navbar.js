@@ -13,17 +13,7 @@ const Navbar = () => {
   const handleExperienceClick = () => {
     setMobileDropdownOpen(!mobileDropdownOpen);
   };
-
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
-  const handleMouseEnter = () => {
-    setDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {};
-
+  
   const handleClickOutside = (event) => {
     if (!event.target.closest(".relative")) {
       setDropdownOpen(false);
