@@ -30,7 +30,7 @@ const ExperienceCard = ({
         <label className="mt-3 desktop:text-lg laptop:text-lg tablet:text-base phone:text-base font-semibold">
           Roles & Responsibilities:
         </label>
-        <ul className="list-disc text-justify desktop:text-lg laptop:text-lg tablet:text-base phone:text-base font-normal">
+        <ul className="list-disc text-justify desktop:p-4  laptop:p-4  tablet:text-base phone:text-base font-normal">
           {responsibilities.map((responsibility, idx) => (
             <li key={idx}>
               <p>{responsibility}</p>

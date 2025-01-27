@@ -98,7 +98,7 @@ const Navbar = () => {
                   className="no-underline"
                   style={{ color: getNavbarTextColor() }}
                 >
-                  Ritesh Patil
+                  Sahana Deepak
                 </Link>
               </h1>
             </div>
@@ -118,63 +118,13 @@ const Navbar = () => {
                 >
                   <span className="ml-2">About Me</span>
                 </Link>
-
-                <div className="relative">
-                  <button
-                    onClick={handleDropdownToggle}
-                    onMouseEnter={handleMouseEnter}
-                    className="flex flex-row items-center px-3 py-2 ml-4 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
-                    style={{ color: getNavbarTextColor() }}
-                  >
-                    <span className="mx-2">Experience</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className={`w-4 h-4 mt-1 transform ${
-                        dropdownOpen ? "rotate-180" : "rotate-0"
-                      } transition-transform duration-300 ease-in-out`}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </button>
-                  {dropdownOpen && (
-                    <div
-                      className="absolute -right-12 w-60 mt-2 origin-top-right rounded-md shadow-lg"
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      <div className="py-1 bg-white rounded-md shadow-xs">
-                        <Link
-                          to="/experience"
-                          className="flex flex-row items-center px-4 py-2 text-lg no-underline text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
-                          style={{ color: getNavbarTextColor() }}
-                        >
-                          Professional Experience
-                        </Link>
-                        <Link
-                          to="/projects"
-                          className="flex flex-row items-center px-4 py-2 text-lg no-underline text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
-                          style={{ color: getNavbarTextColor() }}
-                        >
-                          Personal Project
-                        </Link>
-                        <Link
-                          to="/certificates"
-                          className="flex flex-row items-center px-4 py-2 text-lg no-underline text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
-                          style={{ color: getNavbarTextColor() }}
-                        >
-                          Certifications
-                        </Link>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
+                <Link
+                  to="/experience"
+                  className="flex flex-row items-center px-3 py-2 ml-4 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
+                  style={{ color: getNavbarTextColor() }}
+                >
+                  <span className="ml-2">Experience</span>
+                </Link>
                 <Link
                   to="/resume"
                   className="flex flex-row items-center px-3 py-2 ml-4 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"

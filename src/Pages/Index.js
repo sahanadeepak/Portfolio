@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ritesh from "../Assests/Ritesh.jpg";
+import sahana from "../Assests/Sahana.jpg";
 import Github from "../Assests/Github.png";
 import Linkedin from "../Assests/Linkedin.png";
 import Mail from "../Assests/Mail.png";
@@ -24,17 +24,17 @@ const Index = () => {
   }, [navigate]);
 
   const GitHubClick = () => {
-    window.open("https://github.com/RiteshPatil2001", "_blank");
+    window.open("https://github.com/sahanadeepak", "_blank");
   };
   const LinkedinClick = () => {
     window.open(
-      "https://www.linkedin.com/in/ritesh-patil-40b088236/",
+      "https://www.linkedin.com/in/sahana-mysore-deepak-279492ab/",
       "_blank"
     );
   };
 
   const MailClick = () => {
-    const emailAddress = "riteshpatil6731@gmail.com";
+    const emailAddress = "sahani.sahanamd@gmail.com";
     const mailtoLink = `mailto:${emailAddress}`;
     window.location.href = mailtoLink;
   };
@@ -49,17 +49,17 @@ const Index = () => {
               <label className="text-6xl phone:text-2xl tablet:text-4xl font-medium leading-[3.5rem]">
                 Hello🙋 I'm{" "}
                 <label className="titlename font-bold text-[#056583]">
-                  Ritesh Patil
+                  Sahana Mysore Deepak
                 </label>
               </label>
               <label className="text-3xl phone:text-lg tablet:text-2xl font-[500] leading-[3rem] pb-4">
-                Building the Future of Web and Data
+              Building the Future of Web and Data
               </label>
               <label className="text-lg phone:text-sm tablet:text-base font-[500] text-center leading-[1.5rem] phone:pl-3 phone:pr-3">
-                Expertise in Full Stack Development And Dynamic Development |
-                Skilled in Modern
+              Expertise in Full Stack Development | Agile Development | Skilled in Modern
+              
                 <br />
-                Frameworks and Technologies | Mastering the Art of Data Science
+                Frameworks and Technologies | Cloud Development
               </label>
               <ScrollLink
                 to="connect"
@@ -76,7 +76,7 @@ const Index = () => {
         <div className="flex w-full pt-24 phone:pt-8 tablet:pt-16 justify-center">
           <div className="w-[95%] h-fit bg-white rounded-xl overflow-hidden shadow-lg flex desktop:flex-row laptop:flex-row tablet:flex-row phone:flex-col">
             <img
-              src={ritesh}
+              src={sahana}
               alt=""
               className="desktop:w-4/12 laptop:w-4/12"
             ></img>
@@ -91,7 +91,7 @@ const Index = () => {
               <p>
                 I have developed proficiency in programming languages such as{" "}
                 <span className="text-[#b73535] font-semibold">
-                  Java, ReactJs, Python, Spring Boot, MERN stack, TailwindCSS
+                  Java, ReactJs,Spring Boot,JavaScript,
                   and many more
                 </span>{" "}
                 along with hands-on experience with it.
@@ -102,14 +102,6 @@ const Index = () => {
                   Data analysis and machine learning
                 </span>{" "}
                 are my additional areas of interest.
-              </p>
-
-              <p>
-                Whenever I can, I incorporate my passion for{" "}
-                <span className="text-[#b73535] font-semibold">
-                  cricket and swimming
-                </span>{" "}
-                which helps me stay physically active.
               </p>
             </div>
           </div>

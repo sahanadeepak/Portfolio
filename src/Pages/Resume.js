@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ResumePNG from "../Assests/Resume_Png.png";
+import ResumePNG from "../Assests/Sahana.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -21,10 +21,10 @@ const Resume = () => {
   }, [navigate]);
 
   const handleDownload = () => {
-    const pdfUrl = process.env.PUBLIC_URL + "/Ritesh_Patil_Resume.pdf";
+    const pdfUrl = process.env.PUBLIC_URL + "/Sahana_MysoreDeepak_Resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Ritesh_Patil_Resume.pdf";
+    link.download = "Sahana_MysoreDeepak_Resume.pdf";
     link.click();
   };
 

@@ -5,26 +5,26 @@ import Mail from "../Assests/Mail.png";
 
 const Footer = () => {
   const GitHubClick = () => {
-    window.open("https://github.com/RiteshPatil2001", "_blank");
+    window.open("https://github.com/Sahanadeepak", "_blank");
   };
   const LinkedinClick = () => {
     window.open(
-      "https://www.linkedin.com/in/ritesh-patil-40b088236/",
+      "https://www.linkedin.com/in/sahana-mysore-deepak-279492ab/",
       "_blank"
     );
   };
   const MailClick = () => {
-    const emailAddress = "riteshpatil6731@gmail.com";
+    const emailAddress = "sahani.sahanamd@gmail.com";
     const mailtoLink = `mailto:${emailAddress}`;
     window.location.href = mailtoLink;
   };
   return (
     <div className="flex flex-wrap justify-evenly text-white bg-black pb-3 pt-3">
       <div>
-        <label>Designed and Developed by Ritesh Patil</label>
+        <label>Designed and Developed by Sahana</label>
       </div>
       <div>
-        <label>Copyright © 2024 Ritesh Patil</label>
+        <label>Copyright © 2025 Sahana Mysore Deepak</label>
       </div>
       <div className="grid grid-cols-3 gap-x-20 phone:gap-x-10 tablet:gap-x-10 phone:mt-2">
         <div onClick={LinkedinClick}>
