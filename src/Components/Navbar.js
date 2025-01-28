@@ -5,14 +5,10 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const location = useLocation();
 
-  const handleExperienceClick = () => {
-    setMobileDropdownOpen(!mobileDropdownOpen);
-  };
   
   const handleClickOutside = (event) => {
     if (!event.target.closest(".relative")) {
@@ -176,64 +172,13 @@ const Navbar = () => {
             >
               <span className="ml-2">About me</span>
             </Link>
-            <div className="relative">
-              <button
-                onClick={handleExperienceClick}
-                className="flex flex-row items-center w-full px-3 py-2 mt-1 text-lg no-underline font-medium text-left rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
-                style={{ color: getNavbarTextColor() }}
-              >
-                <span className="mx-2">Experience </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={`w-4 h-4 mt-1 transform ${
-                    mobileDropdownOpen ? "rotate-180" : "rotate-0"
-                  } transition-transform duration-300 ease-in-out`}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              {mobileDropdownOpen && (
-                <div
-                  className="px-2 py-2 mt-2 bg-white rounded-md shadow-xs"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="user-menu"
-                  onMouseLeave={() => setMobileDropdownOpen(false)}
-                  onClick={handleExperienceClick}
-                >
-                  <Link
-                    to="/experience"
-                    className="flex flex-row items-center px-3 py-2 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
-                    style={{ color: getNavbarTextColor() }}
-                    role="menuitem"
-                  >
-                    Professional Experience
-                  </Link>
-                  <Link
-                    to="/projects"
-                    className="flex flex-row items-center px-3 py-2 mt-1 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
-                    style={{ color: getNavbarTextColor() }}
-                    role="menuitem"
-                  >
-                    Personal Project
-                  </Link>
-                  <Link
-                    to="/certificates"
-                    className="flex flex-row items-center px-3 py-2 mt-1 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
-                    style={{ color: getNavbarTextColor() }}
-                    role="menuitem"
-                  >
-                    Certifications
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link
+              to="/experience"
+              className="flex flex-row items-center px-3 py-2 mt-1 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
+              style={{ color: getNavbarTextColor() }}
+            >
+              <span className="ml-2">Experience</span>
+            </Link>
             <Link
               to="/resume"
               className="flex flex-row items-center px-3 py-2 mt-1 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"

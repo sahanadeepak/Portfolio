@@ -47,7 +47,7 @@ const Index = () => {
           <div className="dot-pattern flex flex-col items-center">
             <div className="absolute flex flex-col items-center desktop:top-52 laptop:top-52 tablet:top-44 phone:top-44">
               <label className="text-6xl phone:text-2xl tablet:text-4xl font-medium leading-[3.5rem]">
-                Hello🙋 I'm{" "}
+                Hello🙋 I'm {" "}
                 <label className="titlename font-bold text-[#056583]">
                   Sahana Mysore Deepak
                 </label>
